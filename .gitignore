@@ -54,5 +54,4 @@ build-iPhoneSimulator/
 node_modules
 .DS_Store
 .env
-keys.js
 ```
