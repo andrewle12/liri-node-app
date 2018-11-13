@@ -1,4 +1,4 @@
-console.log('this is loaded');
+console.log('Loading Spotify ID and Secret...\n');
 
 
 
