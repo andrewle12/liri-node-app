@@ -14,7 +14,7 @@
 
 The application can accept any one of the above inputs followed by a space and search term. The search term can contain spaces between multiple words.
 
-![node input](Readme Images/Capture.png)
+![node input](../master/Readme Images/Capture.png)
 
 
 
