@@ -82,9 +82,9 @@ if (command === "spotify-this-song" && userquery === "") {
 
 //Spotify API
 if (command === "spotify-this-song") {
-  spotify.search({ type: "track", query: userquery }, function(err, data) {
-    if (err) {
-      return console.log("Error occurred: " + err);
+  spotify.search({ type: "track", query: userquery }, function(error, data) {
+    if (error) {
+      return console.log("Error occurred: " + error);
     }
 
     console.log("\nArtist: " + data.tracks.items[0].artists[0].name);
@@ -94,8 +94,33 @@ if (command === "spotify-this-song") {
   });
 }
 
+
+//Catch for no input on OMDB API
+if (command === "movie-this" && userquery === "") {
+    userquery = "Mr. Nobody";
+  }
+
+
 //OMDB API
 if (command === "movie-this") {
+    var queryUrl = "http://www.omdbapi.com/?t=" + userquery + "&y=&plot=short&apikey=trilogy";
+    request(queryUrl, function(error, response, body){
+        if (error){
+            console.log(error);
+        }
+        
+        body = JSON.parse(body);
+        console.log(("\nName: "+body.Title));
+        console.log(("Year: "+body.Year));
+        console.log(("IMDB Rating: "+body.Ratings[0].Value));
+        console.log(("Rotten Tomatoes Rating: "+body.Ratings[1].Value));
+        console.log(("Production Country: "+body.Country));
+        console.log(("Language: "+body.Language));
+        console.log(("Plot: "+body.Plot));
+        console.log(("Actors: "+body.Actors));
+
+    });
+
 }
 
 //Notepad command
