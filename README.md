@@ -46,4 +46,19 @@ The application can accept any one of the above inputs followed by a space and s
 ![bands input 2](/images/Capture4.PNG)
 
 
+##movie-this
 
+*Retrieves data from the OMDB API
+
+![movies input 1](/images/Capture5.PNG)
+
+
+*No artist input defaults to a search for "Mr. Nobody"
+
+![movies input 2](/images/Capture6.PNG)
+
+##do-what-it-says
+
+*Reads the "random.txt" file in the same folder and accepts the first parameter before the " , " as an input and the second parameter after " , " as the search term.
+
+![random input 1](/images/Capture7.PNG)
