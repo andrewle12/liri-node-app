@@ -18,9 +18,32 @@ The application can accept any one of the above inputs followed by a space and s
 
 
 
-
-
-
 # Description
 
-* The node Liri application 
+* The node Liri application is a text interpretor that can accept song, artist, and movie title inputs and retrieve information from Spotify, Bands in Town, and OMDB (Online Movie Database).
+
+##spotify-this-song
+
+*Retrieves data from the Spotify API
+*Requires a Spotify ID and Secret in a .env file
+
+![spotify input 1](/images/Capture1.PNG)
+
+
+*No song input defaults to a search for "The Sign" by Ace of Base
+
+![spotify input 2](/images/Capture2.PNG)
+
+##concert-this
+
+*Retrieves data from the Bands in Town API
+*Lists up to 5 events that the band or artist has performed
+
+![bands input 1](/images/Capture3.PNG)
+
+*No artist input defaults to a message asking for input
+
+![bands input 2](/images/Capture4.PNG)
+
+
+

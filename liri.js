@@ -33,7 +33,7 @@ if (command === "do-what-it-says") {
 var liri = function() {
   //Catch for no input on concert query
   if (command === "concert-this" && userquery === "") {
-    throw "Please enter a band or artist name";
+    console.log("Please enter a band or artist name");
   }
 
   //Bands in town API
